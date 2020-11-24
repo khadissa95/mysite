@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nouveauté</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+        body{
+            
+        }
+        h5{
+            height: 50px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      opacity: 0.8;
+      margin-top: 20px;
+    }
+        .topnav {
+  overflow: hidden;
+  color: #f2f2f2;
+  width: 1360px;
+  height: 50px;
+  margin-left: -5px;
+  background-color: rgb(108, 253, 120);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: rgb(76, 119, 175);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .main{
+      text-align: justify;
+      color: white;
+      background-color: black;
+      opacity: 0.7;
+  }
+  input[type=text] {
+  width: 440px;
+  margin-left: 400px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+button{
+    width: 60px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: rgba(187, 184, 184, 0.274);
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.overlay-content{
+    content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  margin: 10;
+  padding: 10;
+}
+
+li {
+    font-size: 170%;
+    margin: 30px;
+  display: inline;
+}
+li a{
+    color: rgba(133, 133, 136, 0.698);
+}
+li a:hover {
+  color: rgb(40, 43, 235);
+} 
+.Nouveauté{
+  background-color: rgba(196, 191, 191, 0.582);
+  color: rgb(53, 51, 51);
+  width: 700px;
+  height: 50px;
+  border-radius: 15px
+}
+img{
+    margin: 10px;
+    padding: 40px;
+}
+h3{
+    margin-left: 590px;
+    color: white;
+    background-color: black;
+    width: 500px;
+    height: 30px;
+    text-align:center;
+    border-radius: 5px;
+}
+.styled{
+    width: 90px;
+    border-radius: 10px;
+    background-color: rgb(5, 7, 129);
+    color: rgb(255, 255, 255);
+    margin-left: 1150px;
+}
+h4{
+  margin-left: 300px;
+}
+.block{
+  margin-top: -50px;
+}
+    </style>
+</head>
+<body>
+        <div class="topnav" id="myTopnav">
+  
+                <a href="{%url "index" %}">Accueil</a>
+                <a href="{%url "inscript" %}">inscription</a>
+                <a href="">nouveauté</a>
+                <a href="#about">Mise à jour</a>
+                <a href="#about">Part/Ajouter</a>
+                <a href="#about">Profil</a>
+                <a href="#about">Administrateur</a> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+                
+              </div>
+              <div  class="overlay-content">
+                  <form>
+                    <h4 style="color:blue;">Accueil</h4>
+                    <div class="block">
+                      <input type="text" name="search" placeholder="Search..">
+                      <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                      <i class="fa fa-reply" aria-hidden="true"></i>
+                  </div>
+                </form>
+                </div>
+                <div class="genre">
+                        <ul>
+                                <li><a href="{%url "populaire" %}">Populaire</a></li>
+                                <li><a href="#contact">Genre</a></li>
+                                <li><a href="">Nouveauté</a></li>
+                              </ul>
+                </div>
+                <div class="Nouveauté">
+                        <ul>
+                                <li><a href="">Lecture en cours</a></li>
+                                <li><a href="">Archivée</a></li>
+                                <li><a href="">Liste de lecture</a></li>
+                              </ul>
+                </div>
+                <div>
+                        <a href=""><img src="/static/Meslivres/emilazola.jpg"></a>
+                        <a href=""><img src="/static/Meslivres/laproie_.jpg"></a>
+                        <a href=""><img src="/static/Meslivres/debutvie.jpg"></a>
+                </div>
+                <div>
+                    <h3>Trouver des histoires similaire ici</h3>
+                    <input class="favorite styled" type="button" value="Voir Plus">
+                </div>  
+                <nav class="navbar navbar-inverse" style="background-color:black;color:aliceblue;">                          
+                          <div class="nav navbar-nav" >
+                            <p style="margin-right:30px;">Ma bibliothéque,mon secret d'une cuture intelligente</p>
+                        </div>
+                          <div class="nav navbar-nav navbar-right">
+                                <p style="text-align:end"><i style='font-size:24px;color: rgb(5, 42, 161)' class='fab'>&#xf09a;</i> 
+                                    Mylibrary</p>
+                          </div>
+                        </div>
+                      </nav> 
+</body>
+</html>

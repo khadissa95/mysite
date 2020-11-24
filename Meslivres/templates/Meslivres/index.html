@@ -17,7 +17,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(141, 238, 149);
+  background-color: rgb(108, 253, 120);
 }
 
 .topnav a {
@@ -70,9 +70,11 @@ body {
     color: #000;
 }
 .tap{
-  background-image: url("/static/Meslivres/font2.jpg");
-  height: 170px;
-}
+  background-image: url("/static/Meslivres/mesure_impactbib.jpg");
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: 1400px;
+height: 170px;}
 .form-control{
   width: 30%;
   margin-left: 30%
@@ -100,16 +102,18 @@ p{
 </style>
 </head>
 <body>
+  <header>
+  
 <div class="tap">
     <img src="/static/Meslivres/logo.jpg" class="logo">
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <h5 style="text-align:end;color: #ffffff;margin-top:-80px;">A propos <i class="fa fa-cog"></i></h5>
 </div>
 <div class="topnav" id="myTopnav">
-
-  <a href="#home" class="active">Accueil</a>
-  <a href="inscription.html">Inscription</a>
-  <a href="#contact">Nouveauté</a>
+  
+  <a href="#home">Accueil</a>
+  <a href="{%url "inscript" %}">inscription</a>
+  <a href="{%url "nouveauté" %}">nouveauté</a>
   <a href="#about">Mise à jour</a>
   <a href="#about">Part/Ajouter</a>
   <a href="#about">Profil</a>
@@ -117,13 +121,15 @@ p{
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+  
 </div>
-</br>
+</header>
+<br>
 <div class="container-fluid">
     <div class="row">
         <div class="col-3" style="border:ridge;">
                 <a href="#" style="color:black"><i class="fas fa-th-list"></i> Menu Livre<hr></a>
-                <input type="text" id="mySearch" onkeyup="myFunction()"  placeholder="Bibliothéque" title="Type in a category">
+ <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Bibliothéque" title="Type in a category">
                 <ul id="myMenu">
                     <i class="fas fa-book-reader"></i>  <a href="#">Literrature</a></br>
                     <hr>

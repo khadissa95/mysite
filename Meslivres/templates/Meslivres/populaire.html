@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        img{
+            padding: 8px;
+        }
+        .navbar-nav{
+            margin-left: 490px;
+            margin-top: -50px;
+        }
+        a{
+            margin-left: 90px;
+            padding:10px;
+        }
+        .search{
+            margin-left: -100px;
+            height: 30px;
+            width: 560px;
+        }
+        ul {
+  margin: 10;
+  padding: 0;
+}
+
+li {
+    font-size: 130%;
+  display: inline;
+}
+li a{
+    color: rgba(133, 133, 136, 0.698);
+}
+li a:hover {
+  color: rgb(40, 43, 235);
+} 
+.button{
+    margin-top: -90px;
+    margin-left: 1050px;
+}
+h4{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>                          
+    <div class="nav" >
+        <img src="/static/Meslivres/logo.jpg" style="margin: 10px;
+        width: 90px;">
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <input  class="search" type="search" value="Search" <i class="fa fa-search" aria-hidden="true"></i>
+                <a class="nav-link" href="{%url "index" %}">Accueil</a>
+                <a class="nav-link" href="{%url "inscript" %}">Mon compte</a>
+            </ul>
+          </nav>
+          <div class="genre">
+                <ul>
+                    <li><a href="">Populaire</a></li>
+                    <li><a href="">Genre</a></li>
+                    <li><a href="{%url "nouveauté" %}">Nouveauté</a></li>
+                </ul>
+        </div>
+        <div>
+            <p>Disponible pour vous</p>
+            <img src="/static/Meslivres/jean.jpg">
+            <img src="/static/Meslivres/jean2.jpg">
+            <img src="/static/Meslivres/jean3.jpg">
+            <img src="/static/Meslivres/jean4.jpg">
+            <img src="/static/Meslivres/jean5.jpg">
+            <img src="/static/Meslivres/jean6.jpg">
+        </div>
+        <h4 style="color:blue">Trouver des livres intéréssentes</h4>
+        <input class="button" type=button onclick=window.location.href=''; value="Voir plus" />
+</body>
+</html>
+    
+        
+    
