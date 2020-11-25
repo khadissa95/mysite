@@ -10,8 +10,16 @@ def nouveauté(request,):
      return render(request,'Meslivres/nouveauté.html')
 def inscript(request,):
      return render(request,'Meslivres/inscript.html')
+def misàjour(request,):
+     return render(request,'Meslivres/misàjour.html')
+def ajout(request,):
+     return render(request,'Meslivres/ajout.html')
+def profil(request,):
+     return render(request,'Meslivres/profil.html')
 def populaire(request,):
      return render(request,'Meslivres/populaire.html')
+def comp_profil(request,):
+     return render(request,'Meslivres/comp_profil.html')
 
 def get_utilisateur(request):
        form = forms.utilisateurForm()

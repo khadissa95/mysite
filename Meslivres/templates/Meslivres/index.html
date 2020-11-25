@@ -109,20 +109,28 @@ p{
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <h5 style="text-align:end;color: #ffffff;margin-top:-80px;">A propos <i class="fa fa-cog"></i></h5>
 </div>
-<div class="topnav" id="myTopnav">
-  
-  <a href="#home">Accueil</a>
-  <a href="{%url "inscript" %}">inscription</a>
-  <a href="{%url "nouveauté" %}">nouveauté</a>
-  <a href="#about">Mise à jour</a>
-  <a href="#about">Part/Ajouter</a>
-  <a href="#about">Profil</a>
-  <a href="#about">Administrateur</a> 
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  
-</div>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url "inscript" %}">Inscription</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{%url "nouveauté" %}">Nouveauté</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="{%url "misàjour" %}">Mise à jour</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="{%url "ajout" %}">Part/Ajouté</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{%url "profil" %}">Profil</a>
+        </li>
+    </ul>
+  </nav>
 </header>
 <br>
 <div class="container-fluid">

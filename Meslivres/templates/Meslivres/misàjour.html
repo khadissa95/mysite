@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mise à jour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        a{
+            margin-right: 20px;
+            color: black;
+        }
+        p{
+            text-align: center;
+        }
+        img{
+            height: 60%;
+            width: 40%;
+            margin-left: 250px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="{%url "index" %}">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{%url "inscript" %}">Inscription</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{%url "nouveauté" %}">Nouveauté</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Mise à jour</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{%url "ajout" %}">Part/Ajouté</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{%url "profil" %}">Profil</a>
+                    </li>
+                </ul>
+              </nav>
+    <h3>Mise à jour récent <i class="fa fa-plus-circle" style="color:blue" aria-hidden="true"></i></h3>
+</br>
+
+    <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 bg">
+                  <p>L'oeuvre </br> Emile Zola</p>
+                  <img src="/static/Meslivres/oeuvre.jpg">
+                    </br> 
+                </br>
+                  <a href="" <i class="fa fa-thumbs-up" aria-hidden="true" style='font-size:24px;margin-left: 300px;'></i> </a>
+                  <a href="" <i class="fa fa-share" aria-hidden="true" style='font-size:24px'></i> </a>
+                  <a href="" <i class='far fa-comment-alt' style='font-size:24px'></i> </a>
+              </div>
+              <div class="col-6 bg">
+                    <p>Réussir sa licence de droit</br>Frédéric Debove</p>
+                    <img src="/static/Meslivres/reussir.jpg">
+                    </br> 
+                    </br>
+                    <a href="" <i class="fa fa-thumbs-up" aria-hidden="true" style='font-size:24px;margin-left: 300px;'></i> </a>
+                    <a href="" <i class="fa fa-share" aria-hidden="true" style='font-size:24px'></i> </a>
+                    <a href="" <i class='far fa-comment-alt' style='font-size:24px'></i> </a>
+              </div>
+            </div>
+            <div class="container-fluid" style="height: 50px;color:white;background-color: black;">
+                <div class="row">
+                    <div class="col-9 bg">
+                        <p class="navbar-brand">Ma bibliothéque,mon secret d'une culture intellegente</p>
+                    </div>
+                    <div class="col-3 bg">
+                        <p class="navbar-toggler"><i class='fab fa-facebook' style='font-size:24px;color: blue;'></i>  Mylibrary</p>
+                    </div>
+                </div>
+          </div>
+</body>
+</html>
